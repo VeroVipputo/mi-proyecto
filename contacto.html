@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--Meta Description-->
+        <meta name="description" content="Ropa interior para mujer. Tenemos la mejor lencería, bombachas y corpiños para la mujer moderna. Toda la comodidad y sensualidad que necesitas.">
+        <!--favicon-->
+        <link rel="shortcut icon" href="img/ico1.ico" type="image/x-icon">
+        <!--Fonts.google-->
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap" rel="stylesheet">
+        <!--Framework Bootstrap-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+        <!--CSS-->
+        <link rel="stylesheet" href="css/style.css">
+        <title>Ropa interior</title>
+    </head>
+<body>
+     <!--Chat Whatsapp-->
+     <div class="chat">
+        <img class="chat__icono" src="img/chat.png" alt="icono de chat">
+    </div>
+    <header class="encabezado">
+        <!--Navbar toggler-->
+        <nav class="navbar navbar-expand-lg navbar-light bg-white">
+            <div class="container-fluid">
+                <!--Menú Hambuerguesa-->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon ico-Hamb"></span>
+                </button>
+                
+                <!--Logo-->
+                <a class="navbar-brand" href="index.html"><img src="img/Logo.png" alt="logo" width="150" height="auto" class="d-inline-block align-text-top"></a><!--Fin Logo-->
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                    <!--Enlaces-->
+                    <div>
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Home</a></li>
+                            <li class="nav-item"><a class="nav-link" href="productos.html">Productos</a></li>
+                            <li class="nav-item"><a class="nav-link" href="tabla.html">Tabla de talles</a></li>
+                            <li class="nav-item"><a class="nav-link" href="preguntas.html">Preguntas frecuentes</a></li>
+                            <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                        </ul><!--Fin Enlaces-->
+                    </div>
+                </div><!--Fin collapse navbar-collapse-->
+            </div><!--Fin container-fluid-->
+        </nav><!--Fin Navbar toggler-->
+        <!--Logo-->
+    </header>
+    <main class="contacto">
+        <div class="container">
+            <form action="codigo.php" method="post" class="row">
+                <div class="col-md-12">
+                    <label for="Motivo">Motivo</label>
+                    <select class="form-select" aria-label="Default select example">
+                        <option selected>Elejir motivo de la consulta</option>
+                        <option value="Stock">Consulta de Stock</option>
+                        <option value="Reclamo">Reclamo de calidad</option>
+                        <option value="Cambios">Cambios o devoluciones</option>
+                        <option value="Envío">Envío de pedido</option>
+                        <option value="Otros">Otra información</option>
+                    </select><br>
+                </div>  
+                <div class="col-md-6">
+                    <label for="exampleFormControlInput1" class="form-label">Nombre Completo</label>
+                    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Nombre y Apellido" required><br>
+                </div>
+                <div class="col-md-6">
+                    <label for="exampleFormControlInput1" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="info@dominio.com" required><br>
+                </div>
+                <div class="col-md-12">
+                    <label for="comentarios" class="form-label">Comentarios</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" required></textarea><br>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                    <label class="form-check-label" for="flexCheckChecked">¿Desea recibir nuestro Newsletter?</label>
+                </div>
+                <div class="col-md-12">
+                    <button type="button" class="btn btn-outline-dark btn-lg">Enviar</button>
+                </div>
+            </form>
+        </div>    
+    </main>
+    <footer class="pie">
+        <div class="container footerNewsletter">
+            <div class="row">
+                <div class="col-md-12">
+                    <h3>Newsletter</h3>
+                    <p>Recibí en tu email, todas nuestras novedades, promociones y ofertas especiales</p>
+                </div>
+            </div>
+            <div class="row footerNewsletter__form">
+                <div class="col-md-12 mail">
+                    <form action="codigo.php" method="post" class="form_pie">
+                        <input type="email" class="form-control" placeholder="info@dominio.com" required><input type="submit" value="Subscribirme">
+                    </form>  
+                </div>   
+            </div> 
+                <!-- ICONOS -->
+                <p class="iconos__texto">Seguinos</p>
+                <a href="#"><img class="iconoFace" src="img/facebook.png" alt="icono de facebook"></a>
+                <a href="#"><img  class="iconoInst" src="img/Instagram.png" alt="icono de Instagram"></a>
+                <!-- MENU -->
+                <ul class="pie__menu">
+                    <li class="pie__item"><a class="pie__link" href="tabla.html">Tabla de talles</a></li>
+                    <li class="pie__item"><a class="pie__link" href="preguntas.html">Preguntas frecuentes</a></li>
+                    <li class="pie__item"><a class="pie__link" href="contacto.html">Contacto</a></li>
+                </ul><!--Fin menu--> 
+            <div class="pie__designed">
+                <p>Designed by Verónica Vipputo</p>  
+            </div><!--Fin designed-->
+        </div><!--Fin container-->
+    </footer><!--Fin Footer-->
+        <!--JS Bootstrap-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+</body>
+</html>

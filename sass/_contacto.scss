@@ -1,0 +1,23 @@
+.contacto{
+    margin-top: 50px;
+    background-image: url(../img/contacto1.jpg);
+    background-size: cover;
+    form{
+        width: 100%;
+        font-size: 20px;
+        color: $color2;
+        padding: 35px;
+    }
+}
+#flexCheckChecked{
+    background-color: $color5;
+}
+.form-select option{
+    @extend form;
+}
+form .btn{
+    margin-top: 10px;
+    font-size: 18px;
+    background: $color2;
+    color: $blanco;
+}

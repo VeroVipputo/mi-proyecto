@@ -1,0 +1,31 @@
+.tabla{
+    margin-top: 50px;
+    text-align: center;
+    h1{
+        text-transform: uppercase;
+        margin-bottom: 30px;
+    }
+}
+th, tr, td{
+    color: $color1;
+}
+.imagen_tabla{
+    max-width: 100%;
+    @include size(100%, auto)
+}
+.form-check{
+    padding-left: 2em;
+    &-input:checked{
+        border-color: $blanco;
+    } 
+} 
+.detalle_busto, .detalle_bombacha{
+    margin-top: 10px;
+    padding: 10px;
+    h2{
+        padding: 10px;
+    }
+    p{
+        text-align: justify;
+    }
+}

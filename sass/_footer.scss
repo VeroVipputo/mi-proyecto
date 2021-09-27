@@ -1,0 +1,85 @@
+/* FOOTER */
+.pie{
+    background-image: linear-gradient( $color2, $color3);
+    height: 100%;
+    padding: 10px;
+    margin-top: 40px;
+    &__menu{
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    &__item{
+        list-style: none;
+    }
+    &__link{
+        font-size: 18px;
+        color: $blanco;
+        text-decoration: none;
+    }
+    &__link:hover{
+        color: $negro;
+    }
+    &__designed{
+        font-size: 1rem;
+        text-align: center;
+    }
+}
+.footerNewsletter{
+    text-align: center;
+    font-size: 15px;
+    margin-top: 30px;
+    .footerNewsletter__form{
+        justify-content: center;
+    }
+    form {
+        background: $blanco;
+        padding: 6px 10px;
+        position: relative;
+        box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+        border-radius: 50px;
+        input[type="email"] {
+            border: 0;
+            padding: 4px 8px;
+            width: 80%;
+        }
+        input[type="submit"] {
+            position: absolute;
+            top: 0;
+            right: -1px;
+            bottom: 0;
+            border: 0;
+            background: none;
+            font-size: 16px;
+            padding: 0 20px;
+            background: $color5;
+            color: $blanco;
+            transition: 0.3s;
+            box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+            border-radius: 50px;
+          }
+        input[type="submit"]:hover {
+            background:$negro;
+        }  
+    }
+    &__form{
+        max-width: 100%;
+    }
+}
+.iconos{
+    justify-content: center;
+    &__texto{
+        margin-top: 10px;
+        text-align: center;
+        color: $blanco;
+    }
+}
+@each $iconos in iconoFace, iconoInst {
+    .#{$iconos}{
+        @include size (30px, 25px);
+        margin-bottom: 15px;
+        padding: 1px;
+    }
+}
