@@ -135,9 +135,7 @@ header {
         width: 100%; }
 
 .publicidad {
-  margin-top: 25px;
-  display: flex;
-  flex-direction: column; }
+  margin-top: 25px; }
 
 .productoSoutein img:hover, .productoBombacha img:hover {
   opacity: 0.8; }
