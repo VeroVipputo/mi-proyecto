@@ -3,7 +3,7 @@
     background-image: linear-gradient( $color2, $color3);
     height: 100%;
     padding: 10px;
-    margin-top: 40px;
+    margin-top: 20px;
     &__menu{
         height: auto;
         display: flex;
@@ -54,14 +54,15 @@
             background: none;
             font-size: 16px;
             padding: 0 20px;
-            background: $color5;
+            background: $negro;
             color: $blanco;
             transition: 0.3s;
             box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
             border-radius: 50px;
           }
         input[type="submit"]:hover {
-            background:$negro;
+            background:$color3;
+            color: $negro;
         }  
     }
     &__form{

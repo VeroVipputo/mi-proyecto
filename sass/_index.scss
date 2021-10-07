@@ -26,6 +26,7 @@ header{
     position: fixed;
     bottom: 30px;
     right: 20px;
+    z-index: 1;
 
     .chat__icono{
     @include size(64px,64px);
@@ -37,6 +38,12 @@ header{
     .chat__icono:hover{
         transform:scale(1.1);
     }
+}
+.marquesina{
+    background: $negro;
+    color: $blanco;
+    font-size: 14px;
+    height: 20px;
 }
 /*------------------------------------------------------------------------*/
 /* MENU */
@@ -147,5 +154,10 @@ header{
               }
           }
     }
+}
+.publicidad{
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
 }
   

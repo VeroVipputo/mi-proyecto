@@ -21,7 +21,8 @@ header {
 .chat {
   position: fixed;
   bottom: 30px;
-  right: 20px; }
+  right: 20px;
+  z-index: 1; }
   .chat .chat__icono {
     width: 64px;
     height: 64px;
@@ -31,6 +32,12 @@ header {
     overflow: hidden; }
   .chat .chat__icono:hover {
     transform: scale(1.1); }
+
+.marquesina {
+  background: #000000;
+  color: #ffff;
+  font-size: 14px;
+  height: 20px; }
 
 /*------------------------------------------------------------------------*/
 /* MENU */
@@ -127,6 +134,11 @@ header {
       .productos_img .productos_contenido .producto_link .btn1:hover::before {
         width: 100%; }
 
+.publicidad {
+  margin-top: 25px;
+  display: flex;
+  flex-direction: column; }
+
 .productoSoutein img:hover, .productoBombacha img:hover {
   opacity: 0.8; }
 
@@ -165,11 +177,11 @@ th, tr, td {
 .preguntas {
   margin-top: 50px; }
 
-.preguntasFrecuentes {
+.preguntasFrecuentes, .detalle_busto h2, .detalle_bombacha h2 {
   margin: 10px;
   text-align: left; }
 
-.preguntasFrecuentes h2 {
+.preguntasFrecuentes h2, .detalle_busto h2 h2, .detalle_bombacha h2 h2 {
   color: #DE6262;
   font-weight: bold; }
 
@@ -197,7 +209,7 @@ form .btn, .form-select option .btn {
   background-image: linear-gradient(#FFB8C3, #D9B1AF);
   height: 100%;
   padding: 10px;
-  margin-top: 40px; }
+  margin-top: 20px; }
   .pie__menu {
     height: auto;
     display: flex;
@@ -241,13 +253,14 @@ form .btn, .form-select option .btn {
       background: none;
       font-size: 16px;
       padding: 0 20px;
-      background: #DE6262;
+      background: #000000;
       color: #ffff;
       transition: 0.3s;
       box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
       border-radius: 50px; }
     .footerNewsletter form input[type="submit"]:hover, .footerNewsletter .form-select option input[type="submit"]:hover, .form-select .footerNewsletter option input[type="submit"]:hover {
-      background: #000000; }
+      background: #D9B1AF;
+      color: #000000; }
   .footerNewsletter__form {
     max-width: 100%; }
 
