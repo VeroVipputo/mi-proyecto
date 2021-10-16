@@ -1,11 +1,31 @@
-.preguntas{
-    margin-top: 50px;
+.bloque{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
 }
-.preguntasFrecuentes{
-    margin: 10px;
-    text-align: left;
+.bloque_principal{
+    @extend .tabla;
+    p{
+        text-align: justify;
+    }
 }
-.preguntasFrecuentes h2{
-    color: $color5;
-    font-weight: bold;
-} 
+.ico_pago{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100%;
+}
+.tarjeta:hover{
+    transform:scale(1.1);
+}
+.ico_envio{
+    display: flex;
+    justify-content: center;
+}
+.ico_truck{
+    width: 400px;
+}
+

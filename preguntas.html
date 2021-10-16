@@ -18,8 +18,10 @@
     </head>
 <body>
      <!--Chat Whatsapp-->
-     <div class="chat">
-        <img class="chat__icono" src="img/chat.png" alt="icono de chat">
+    <div class="chat">
+        <a href="https://wa.me/5491138884570/?text=Hola%20quería%20hacer%20una%20consulta" target="_blank">
+            <img class="chat__icono" src="img/iconos/chat.png" alt="icono de chat">
+        </a>
     </div>
     <header class="encabezado">
         <!--Navbar toggler-->
@@ -28,8 +30,7 @@
                 <!--Menú Hambuerguesa-->
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon ico-Hamb"></span>
                 </button>
-                
-                <!--Logo-->
+                 <!--Logo-->
                 <a class="navbar-brand" href="index.html"><img src="img/Logo.png" alt="logo" width="150" height="auto" class="d-inline-block align-text-top"></a><!--Fin Logo-->
                 <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
                     <!--Enlaces-->
@@ -47,26 +48,38 @@
         </nav><!--Fin Navbar toggler-->
         <!--Logo-->
     </header>
-    <main class="preguntas">
-        <section class="preguntasFrecuentes">
-        <h1>Preguntas Frecuentes</h1><br>
-            <h2>¿Los productos son originales?</h2>
-                <p>Sí, los productos encontrados shop online de UN BARDO tienen total garantía de procedencia.</p><br>
-            <h2>¿Cómo puedo hacer mi pedido?</h2>
-                <p>Escribinos por Whatsapp, te asesoramos en tu compra y te lo llevamos a tu casa</p><br>
-            <h2>¿Cuáles son los métodos de pago?</h2>
-                <p>Los métodos de pago habilitados son: tarjeta de crédito, tarjeta de crédito y cupón de pago para abonar en cualquier Pago Fácil, Rapipago a través de la plataforma de Mercado Pago, que es 100% seguro.</p><br>
-            <h2>¿Puedo cambiar o devolver un producto?</h2>
-                <p>La Política de Cambio está sujeta a cada caso en particular.</p><br>
-            <h2>¿Cómo gestiono un reclamo por prenda recibida por error, talle incorrecto, con algún defecto o pedido incompleto?</h2>
-                <p>En caso de que tengas alguna inquietud con el producto recibido, te pedimos por favor que nos escribas dentro de las 72 hs siguientes a la recepción del mismo a unbardo@gmail.com adjuntando imágenes del producto adquirido en su totalidad, indicando el número de pedido y detallando lo sucedido.</p><br>
-        </section>    
+    <main>
+        <article class="bloque">
+            <div>
+                <h1 class="bloque_principal">Preguntas Frecuentes</h1><br>
+                    <h2>¿Puedo cambiar o devolver un producto?</h2>
+                    <p>Te dejamos nuestra Política de cambios / Devoluciones / Fallas de Fábrica. Recordá que siempre podes comunicarte con nosotros enviandonos un mail a unbardo@gmail.com o bien podemos escribirno por Whatsapp.</p><br>
+                    <h2>CAMBIOS:</h2>
+                    <p>Todos los corpiños tienen cambio dentro de los 30 días de haber recibido el producto, siempre y cuando estén en su empaque original y con etiqueta. Las vedetinas y bombachas no tienen cambio por motivos de higiene. Sin excepción. Para realizar un cambio escribinos a unbardo@gmail.com detallando tu número de orden de compra. Debes enviar las prendas con tu moto mensajería o correo de preferencia. Los envíos son a cargo del comprador. Antes de enviar el/los producto/s debés notificarnos por mail. Los productos para cambios están sujetos a disponibilidad de stock. Un Bardo no se hace responsable por daños o extravíos por parte de las empresas de logística con la que nos envíen los productos para cambiar.</p><br>
+                    <h2>DEVOLUCIONES:</h2>
+                    <p>Tendrás derecho a devolver los productos adquiridos dentro de los 3 días de haber recibido tu compra, pasado este período de tiempo no aceptaremos la devolución. Debes enviar las prendas con tu moto mensajería o correo de preferencia. Los envíos son a cargo del comprador. Antes de enviar el/los producto/s debés notificarnos por mail. El dinero se reintegra a través del medio de pago con el que hayas abonado tu compra.</p><br>
+                    <h2>¿Cuáles son los métodos de pago?</h2>
+                    <p>Los métodos de pago habilitados son: tarjeta de crédito (MasterCard / Visa / American Express), tarjeta de débito (Maestro / Visa Electrón), PayPal y cupón de pago para abonar en Wester Union. Todos nuestros medios de pago son 100% seguros.</p>
+            </div>
+        </article>    
+            <div class="ico_pago">
+                <img src="img/iconos/ico_master.png" alt="tarjeta master" class="tarjeta">
+                <img src="img/iconos/ico_maestro.png" alt="tarjeta maestro" class="tarjeta">
+                <img src="img/iconos/ico_visa.png" alt="tarjeta visa" class="tarjeta">
+                <img src="img/iconos/ico_visaElectron.png" alt="tarjeta visa eletrón" class="tarjeta">
+                <img src="img/iconos/ico_american.png" alt="tarjeta american" class="tarjeta">
+                <img src="img/iconos/ico_paypal.png" alt="paypal" class="tarjeta">
+                <img src="img/iconos/ico_wester.png" alt="wester union" class="tarjeta">
+            </div>
+            <div class="ico_envio">
+                <img src="img/iconos/truck.png" alt="" class="ico_truck">
+            </div> 
     </main>
     <footer class="pie">
         <div class="container footerNewsletter">
             <div class="row">
                 <div class="col-md-12">
-                    <h3>Newsletter</h3>
+                    <h3><strong>Newsletter</strong></h3>
                     <p>Recibí en tu email, todas nuestras novedades, promociones y ofertas especiales</p>
                 </div>
             </div>
@@ -78,9 +91,17 @@
                 </div>   
             </div> 
                 <!-- ICONOS -->
-                <p class="iconos__texto">Seguinos</p>
-                <a href="#"><img class="iconoFace" src="img/facebook.png" alt="icono de facebook"></a>
-                <a href="#"><img  class="iconoInst" src="img/Instagram.png" alt="icono de Instagram"></a>
+                <ul id="iconos">
+                    <li id="facebook">
+                        <a href="https://www.facebook.com/pg/unbardolenceria/" title="Facebook" target="_blank"></a>
+                    </li>
+                    <li id="instagram">
+                        <a href="https://www.instagram.com/accounts/login/" title="Instagram" target="_blank"></a>
+                    </li>
+                    <li id="github">
+                        <a href="https://verovipputo.github.io/mi-proyecto/" title="Gitbug" target="_blank"></a>
+                    </li>
+                </ul>
                 <!-- MENU -->
                 <ul class="pie__menu">
                     <li class="pie__item"><a class="pie__link" href="tabla.html">Tabla de talles</a></li>
@@ -92,7 +113,7 @@
             </div><!--Fin designed-->
         </div><!--Fin container-->
     </footer><!--Fin Footer-->
-            <!--JS Bootstrap-->
-            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+        <!--JS Bootstrap-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
     </body>
 </html>

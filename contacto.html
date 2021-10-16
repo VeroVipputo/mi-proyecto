@@ -19,7 +19,9 @@
 <body>
      <!--Chat Whatsapp-->
      <div class="chat">
-        <img class="chat__icono" src="img/chat.png" alt="icono de chat">
+        <a href="https://wa.me/5491138884570/?text=Hola%20quería%20hacer%20una%20consulta" target="_blank">
+            <img class="chat__icono" src="img/iconos/chat.png" alt="icono de chat">
+        </a>
     </div>
     <header class="encabezado">
         <!--Navbar toggler-->
@@ -49,7 +51,7 @@
     </header>
     <main class="contacto">
         <div class="container">
-            <form action="codigo.php" method="post" class="row">
+            <form action="mail.php" method="get" class="row">
                 <div class="col-md-12">
                     <label for="Motivo">Motivo</label>
                     <select class="form-select" aria-label="Default select example">
@@ -63,15 +65,15 @@
                 </div>  
                 <div class="col-md-6">
                     <label for="exampleFormControlInput1" class="form-label">Nombre Completo</label>
-                    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Nombre y Apellido" required><br>
+                    <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Nombre y Apellido" name="nombre" required><br>
                 </div>
                 <div class="col-md-6">
                     <label for="exampleFormControlInput1" class="form-label">Email</label>
-                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="info@dominio.com" required><br>
+                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="info@dominio.com" name="email" required><br>
                 </div>
                 <div class="col-md-12">
                     <label for="comentarios" class="form-label">Comentarios</label>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" required></textarea><br>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="comentarios" required></textarea><br>
                 </div>
                 <div class="form-check">
                     <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
@@ -87,7 +89,7 @@
         <div class="container footerNewsletter">
             <div class="row">
                 <div class="col-md-12">
-                    <h3>Newsletter</h3>
+                    <h3><strong>Newsletter</strong></h3>
                     <p>Recibí en tu email, todas nuestras novedades, promociones y ofertas especiales</p>
                 </div>
             </div>
@@ -99,9 +101,17 @@
                 </div>   
             </div> 
                 <!-- ICONOS -->
-                <p class="iconos__texto">Seguinos</p>
-                <a href="#"><img class="iconoFace" src="img/facebook.png" alt="icono de facebook"></a>
-                <a href="#"><img  class="iconoInst" src="img/Instagram.png" alt="icono de Instagram"></a>
+                <ul id="iconos">
+                    <li id="facebook">
+                        <a href="https://www.facebook.com/pg/unbardolenceria/" title="Facebook" target="_blank"></a>
+                    </li>
+                    <li id="instagram">
+                        <a href="https://www.instagram.com/accounts/login/" title="Instagram" target="_blank"></a>
+                    </li>
+                    <li id="github">
+                        <a href="https://verovipputo.github.io/mi-proyecto/" title="Gitbug" target="_blank"></a>
+                    </li>
+                </ul>
                 <!-- MENU -->
                 <ul class="pie__menu">
                     <li class="pie__item"><a class="pie__link" href="tabla.html">Tabla de talles</a></li>

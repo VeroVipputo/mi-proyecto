@@ -1,6 +1,6 @@
 /* Globales */
 * {
-  Box-sizing: Border-box;
+  box-sizing: border-box;
   margin: 0;
   padding: 0; }
 
@@ -11,10 +11,17 @@ body {
   font-family: 'Nunito', sans-serif;
   font-size: 16px;
   background-color: #ffff; }
+  body h1 {
+    text-transform: uppercase; }
+  body h2 {
+    color: #DE6262; }
 
 header {
   z-index: 1;
   height: 65px; }
+
+::placeholder {
+  font-size: 14px; }
 
 /*------------------------------------------------------------------------*/
 /* CHAT */
@@ -137,18 +144,49 @@ header {
 .publicidad {
   margin-top: 25px; }
 
-.productoSoutein img:hover, .productoBombacha img:hover {
+.producto img:hover {
   opacity: 0.8; }
 
 .detalle_producto {
-  font-size: 14px;
+  font-size: 20px;
   color: #000000; }
 
-.tabla {
+.producto {
+  border-bottom: 1px solid #f0ebe5;
+  margin-bottom: 2rem; }
+
+.precio {
+  text-decoration: line-through;
+  color: #919191; }
+
+.precio_cuotas {
+  color: #919191;
+  font-weight: bold;
+  font-size: 18px; }
+
+.precio_descuento {
+  color: #DE6262;
+  font-weight: bold; }
+
+.btn_producto {
+  color: #ffff;
+  text-align: center;
+  background: #DE6262;
+  border: none;
+  padding: 1rem 5rem;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  border-radius: 20px; }
+
+.btn_producto:hover {
+  background: #000000; }
+
+.tabla, .bloque_principal {
   margin-top: 50px;
   text-align: center; }
-  .tabla h1 {
-    text-transform: uppercase;
+  .tabla h1, .bloque_principal h1 {
     margin-bottom: 30px; }
 
 th, tr, td {
@@ -172,16 +210,32 @@ th, tr, td {
   .detalle_busto p, .detalle_bombacha p {
     text-align: justify; }
 
-.preguntas {
-  margin-top: 50px; }
+.bloque {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px; }
 
-.preguntasFrecuentes, .detalle_busto h2, .detalle_bombacha h2 {
-  margin: 10px;
-  text-align: left; }
+.bloque_principal p {
+  text-align: justify; }
 
-.preguntasFrecuentes h2, .detalle_busto h2 h2, .detalle_bombacha h2 h2 {
-  color: #DE6262;
-  font-weight: bold; }
+.ico_pago {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 100%; }
+
+.tarjeta:hover {
+  transform: scale(1.1); }
+
+.ico_envio {
+  display: flex;
+  justify-content: center; }
+
+.ico_truck {
+  width: 400px; }
 
 .contacto {
   margin-top: 50px;
@@ -189,12 +243,14 @@ th, tr, td {
   background-size: cover; }
   .contacto form, .contacto .form-select option, .form-select .contacto option {
     width: 100%;
-    font-size: 20px;
     color: #FFB8C3;
     padding: 35px; }
 
 #flexCheckChecked {
   background-color: #DE6262; }
+
+.form-select {
+  font-size: 12px; }
 
 form .btn, .form-select option .btn {
   margin-top: 10px;
@@ -208,6 +264,8 @@ form .btn, .form-select option .btn {
   height: 100%;
   padding: 10px;
   margin-top: 20px; }
+  .pie .parrafo_footer {
+    text-align: center; }
   .pie__menu {
     height: auto;
     display: flex;
@@ -219,7 +277,8 @@ form .btn, .form-select option .btn {
   .pie__link {
     font-size: 18px;
     color: #ffff;
-    text-decoration: none; }
+    text-decoration: none;
+    font-size: 20px; }
   .pie__link:hover {
     color: #000000; }
   .pie__designed {
@@ -262,24 +321,43 @@ form .btn, .form-select option .btn {
   .footerNewsletter__form {
     max-width: 100%; }
 
-.iconos {
-  justify-content: center; }
-  .iconos__texto {
-    margin-top: 10px;
-    text-align: center;
-    color: #ffff; }
+ul#iconos {
+  width: 108px;
+  height: 72px;
+  margin: 5px auto;
+  padding: 5px 0 0 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center; }
 
-.iconoFace {
-  width: 30px;
-  height: 25px;
-  margin-bottom: 15px;
-  padding: 1px; }
+ul#iconos li {
+  list-style: none;
+  float: left; }
+  ul#iconos li a {
+    width: 36px;
+    height: 36px;
+    background: url(../img/iconos/iconos.png) no-repeat;
+    transition: all 0.5s ease;
+    display: block; }
 
-.iconoInst {
-  width: 30px;
-  height: 25px;
-  margin-bottom: 15px;
-  padding: 1px; }
+#iconos li#facebook a {
+  background-position: 0 0; }
+
+#iconos li#instagram a {
+  background-position: -36px 0; }
+
+#iconos li#github a {
+  background-position: -72px 0; }
+
+#iconos li#facebook a:hover {
+  background-position: 0 -36px; }
+
+#iconos li#instagram a:hover {
+  background-position: -36px -36px; }
+
+#iconos li#github a:hover {
+  background-position: -72px -36px; }
 
 @media (max-width: 768px) {
   header {
@@ -290,7 +368,10 @@ form .btn, .form-select option .btn {
   .productos_img {
     justify-content: center; }
     .productos_img .productos_contenido {
-      width: auto; } }
+      width: auto; }
+  .bloque {
+    width: 90%;
+    margin: 30px 10px 5px; } }
 
 @media (min-width: 768px) {
   .mail {

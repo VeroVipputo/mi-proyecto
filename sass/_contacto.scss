@@ -4,7 +4,6 @@
     background-size: cover;
     form{
         width: 100%;
-        font-size: 20px;
         color: $color2;
         padding: 35px;
     }
@@ -14,6 +13,9 @@
 }
 .form-select option{
     @extend form;
+}
+.form-select{
+    font-size: 12px;
 }
 form .btn{
     margin-top: 10px;

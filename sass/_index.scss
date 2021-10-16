@@ -1,8 +1,7 @@
 /* Globales */
-*{
-    Box-sizing: Border-box; 
-    margin: 0;
-    padding: 0;
+*{ box-sizing: border-box; 
+   margin: 0;
+   padding: 0;
 }
 html{
     font-size: 62.5%;
@@ -11,6 +10,12 @@ body{
     font-family: 'Nunito', sans-serif;
     font-size: 16px;
     background-color: $blanco;
+    h1{
+        text-transform: uppercase;
+    }
+    h2{
+        color: $color5;
+    }
 }
 header{
     z-index: 1;
@@ -20,6 +25,10 @@ header{
     width: $width;
     height: $height;
 }
+::placeholder{
+    font-size: 14px;
+}
+
 /*------------------------------------------------------------------------*/
 /* CHAT */
 .chat{
@@ -27,7 +36,6 @@ header{
     bottom: 30px;
     right: 20px;
     z-index: 1;
-
     .chat__icono{
     @include size(64px,64px);
     cursor: pointer;

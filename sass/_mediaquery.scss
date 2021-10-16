@@ -12,11 +12,16 @@
             width: auto;
         }
     }
+    .bloque{
+        width: 90%;
+        margin: 30px 10px 5px;
+    }
 }
 @media (min-width: 768px){
     .mail{
         width: 50%;
         justify-content: center;
     }
+
 }
 
