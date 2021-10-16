@@ -14,7 +14,13 @@
     }
     .bloque{
         width: 90%;
-        margin: 30px 10px 5px;
+        margin: 30px 5px 5px 20px;
+    }
+    .ico_envio, .ico_pago{
+        width: 95%;
+    }
+    .ico_envio{
+        flex-direction: column;
     }
 }
 @media (min-width: 768px){

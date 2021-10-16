@@ -232,10 +232,11 @@ th, tr, td {
 
 .ico_envio {
   display: flex;
-  justify-content: center; }
+  justify-content: center;
+  width: 100%; }
 
 .ico_truck {
-  width: 400px; }
+  width: 350px; }
 
 .contacto {
   margin-top: 50px;
@@ -371,7 +372,11 @@ ul#iconos li {
       width: auto; }
   .bloque {
     width: 90%;
-    margin: 30px 10px 5px; } }
+    margin: 30px 5px 5px 20px; }
+  .ico_envio, .ico_pago {
+    width: 95%; }
+  .ico_envio {
+    flex-direction: column; } }
 
 @media (min-width: 768px) {
   .mail {
