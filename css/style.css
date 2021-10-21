@@ -85,7 +85,13 @@ header {
   height: 100%; }
 
 .tituloProductos {
-  margin: 20px; }
+  margin: 20px 0; }
+  .tituloProductos h1 {
+    font-size: 20px;
+    background: #000000;
+    color: #ffff;
+    height: 40px;
+    padding: 10px; }
 
 .productos_img {
   display: flex;

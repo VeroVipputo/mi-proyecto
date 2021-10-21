@@ -94,10 +94,16 @@ header{
 .photo{
     @include size(100%, 100%)
 }
-
 .tituloProductos{
     @extend .titulo__principal;
-    margin: 20px;
+    margin: 20px 0;
+    h1{
+        font-size: 20px;
+        background: $negro;
+        color:$blanco;
+        height: 40px;
+        padding: 10px;
+    }
 }
 .productos_img{
     display: flex;
