@@ -3,10 +3,10 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 20px;
+    margin: 50px 20px;
 }
 .bloque_principal{
-    @extend .tabla;
+    text-align: center;
     p{
         text-align: justify;
     }
@@ -23,7 +23,7 @@
 }
 .ico_envio{
     display: flex;
-
+    align-items: center;
     justify-content: center;
     width: 100%;
 }

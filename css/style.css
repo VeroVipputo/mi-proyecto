@@ -60,9 +60,12 @@ header {
   max-width: 100%;
   padding: 10px; }
   .navbar .nav-link {
-    font-size: 18px; }
+    text-transform: uppercase;
+    font-size: 16px;
+    margin: 10px; }
   .navbar .nav-link:hover {
-    color: #DE6262 !important; }
+    color: #DE6262 !important;
+    font-weight: bold; }
 
 /*------------------------------------------------------------------------*/
 /* HOME */
@@ -183,10 +186,10 @@ header {
 .btn_producto:hover {
   background: #000000; }
 
-.tabla, .bloque_principal {
+.tabla {
   margin-top: 50px;
   text-align: center; }
-  .tabla h1, .bloque_principal h1 {
+  .tabla h1 {
     margin-bottom: 30px; }
 
 th, tr, td {
@@ -215,10 +218,12 @@ th, tr, td {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 20px; }
+  margin: 50px 20px; }
 
-.bloque_principal p {
-  text-align: justify; }
+.bloque_principal {
+  text-align: center; }
+  .bloque_principal p {
+    text-align: justify; }
 
 .ico_pago {
   display: flex;
@@ -232,32 +237,101 @@ th, tr, td {
 
 .ico_envio {
   display: flex;
+  align-items: center;
   justify-content: center;
   width: 100%; }
 
 .ico_truck {
   width: 350px; }
 
-.contacto {
-  margin-top: 50px;
-  background-image: url(../img/contacto1.jpg);
-  background-size: cover; }
-  .contacto form, .contacto .form-select option, .form-select .contacto option {
-    width: 100%;
-    color: #FFB8C3;
-    padding: 35px; }
+.contacto_main {
+  margin-top: 40px; }
 
-#flexCheckChecked {
-  background-color: #DE6262; }
+.contacto_titulo {
+  text-align: center;
+  font-weight: bold; }
 
-.form-select {
-  font-size: 12px; }
+.contacto_imagen {
+  background-position: center;
+  margin-top: 30px;
+  border-radius: 5%;
+  width: 100%;
+  height: auto; }
 
-form .btn, .form-select option .btn {
-  margin-top: 10px;
+.grupo {
+  position: relative;
+  margin: 40px; }
+
+.barra {
+  background: none;
+  color: #919191;
+  font-weight: bold;
   font-size: 18px;
-  background: #FFB8C3;
-  color: #ffff; }
+  padding: 5px 10px 10px 5px;
+  display: block;
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #919191;
+  resize: none;
+  position: relative;
+  display: block;
+  width: 100%; }
+
+.barra::before {
+  content: '';
+  height: 2px;
+  width: 0;
+  bottom: 0;
+  position: absolute;
+  background: #E94E77;
+  transition: 0.3s ease all;
+  left: 0; }
+
+input, textarea {
+  border: none;
+  resize: none; }
+
+input:focus ~ .barra::before,
+textarea:focus ~ .barra::before {
+  width: 100%; }
+
+input:focus, textarea:focus {
+  outline: none;
+  color: #919191; }
+
+input:focus ~ label,
+input:valid ~ label,
+textarea:focus ~ label,
+input:valid ~ label,
+textarea:valid ~ label {
+  position: absolute;
+  top: -14px;
+  font-size: 12px;
+  color: #E94E77; }
+
+label {
+  color: #919191;
+  font-size: 16px;
+  position: absolute;
+  left: 5px;
+  top: 10px;
+  transition: 0.3s ease all;
+  pointer-events: none; }
+
+.contacto_boton {
+  display: block;
+  width: 100px;
+  height: 40px;
+  border: none;
+  background: #000000;
+  color: #ffff;
+  border-radius: 4px;
+  font-size: 16px;
+  margin: 10px auto;
+  cursor: pointer; }
+
+.contacto_boton:hover {
+  background: #E94E77; }
 
 /* FOOTER */
 .pie {
@@ -292,17 +366,17 @@ form .btn, .form-select option .btn {
   margin-top: 30px; }
   .footerNewsletter .footerNewsletter__form {
     justify-content: center; }
-  .footerNewsletter form, .footerNewsletter .form-select option, .form-select .footerNewsletter option {
+  .footerNewsletter form {
     background: #ffff;
     padding: 6px 10px;
     position: relative;
     box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
     border-radius: 50px; }
-    .footerNewsletter form input[type="email"], .footerNewsletter .form-select option input[type="email"], .form-select .footerNewsletter option input[type="email"] {
+    .footerNewsletter form input[type="email"] {
       border: 0;
       padding: 4px 8px;
       width: 80%; }
-    .footerNewsletter form input[type="submit"], .footerNewsletter .form-select option input[type="submit"], .form-select .footerNewsletter option input[type="submit"] {
+    .footerNewsletter form input[type="submit"] {
       position: absolute;
       top: 0;
       right: -1px;
@@ -314,11 +388,11 @@ form .btn, .form-select option .btn {
       background: #000000;
       color: #ffff;
       transition: 0.3s;
-      box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+      box-shadow: 0px 2px 15px #000000;
       border-radius: 50px; }
-    .footerNewsletter form input[type="submit"]:hover, .footerNewsletter .form-select option input[type="submit"]:hover, .form-select .footerNewsletter option input[type="submit"]:hover {
-      background: #D9B1AF;
-      color: #000000; }
+    .footerNewsletter form input[type="submit"]:hover {
+      background: #E94E77;
+      color: #ffff; }
   .footerNewsletter__form {
     max-width: 100%; }
 

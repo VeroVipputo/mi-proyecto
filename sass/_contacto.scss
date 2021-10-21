@@ -1,25 +1,89 @@
-.contacto{
-    margin-top: 50px;
-    background-image: url(../img/contacto1.jpg);
-    background-size: cover;
-    form{
-        width: 100%;
-        color: $color2;
-        padding: 35px;
-    }
+.contacto_main{
+    margin-top: 40px;
 }
-#flexCheckChecked{
-    background-color: $color5;
+.contacto_titulo{
+    text-align: center;
+    font-weight: bold;
 }
-.form-select option{
-    @extend form;
+.contacto_imagen{
+    background-position: center;
+    margin-top: 30px;
+    border-radius: 5%;
+    width: 100%;
+    height: auto;
 }
-.form-select{
-    font-size: 12px;
+.grupo{
+    position: relative;
+    margin: 40px;
 }
-form .btn{
-    margin-top: 10px;
+.barra{
+    background: none;
+    color: $color6;
+    font-weight: bold;
     font-size: 18px;
-    background: $color2;
+    padding: 5px 10px 10px 5px;
+    display: block;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid $color6;
+    resize: none;
+    position: relative;
+    display: block;
+    width: 100%;
+}
+.barra::before{
+    content: '';
+    height: 2px;
+    width: 0;
+    bottom: 0;
+    position: absolute;
+    background: $color8;
+    transition: 0.3s ease all;
+    left: 0;
+}
+input, textarea{
+    border: none;
+    resize: none;
+}
+input:focus~.barra::before,
+textarea:focus~.barra::before{
+    width: 100%;
+}
+input:focus, textarea:focus{
+    outline: none;
+    color: $color6;
+}
+input:focus~label,
+input:valid~label,
+textarea:focus~label,
+input:valid~label,
+textarea:valid~label{
+    position: absolute;
+    top: -14px;
+    font-size: 12px;
+    color: $color8;
+}
+label{
+    color: $color6;
+    font-size: 16px;
+    position: absolute;
+    left: 5px;
+    top: 10px;
+    transition: 0.3s ease all;
+    pointer-events: none;
+}
+.contacto_boton{
+    display: block;
+    width: 100px;
+    height: 40px;
+    border: none;
+    background: $negro;
     color: $blanco;
+    border-radius: 4px;
+    font-size: 16px;
+    margin: 10px auto;  
+    cursor: pointer;
+}
+.contacto_boton:hover{
+    background: $color8;
 }

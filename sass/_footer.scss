@@ -61,12 +61,12 @@
             background: $negro;
             color: $blanco;
             transition: 0.3s;
-            box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+            box-shadow: 0px 2px 15px $negro;
             border-radius: 50px;
           }
         input[type="submit"]:hover {
-            background:$color3;
-            color: $negro;
+            background:$color8;
+            color: $blanco;
         }  
     }
     &__form{
@@ -112,4 +112,8 @@ ul#iconos li {
 #iconos li#github a:hover {
     background-position: -72px -36px;
 }
+
+
+
+
 
